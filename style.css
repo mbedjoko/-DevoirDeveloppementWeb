@@ -1,0 +1,74 @@
+/* Suppression des marges par défaut */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+}
+
+/* ===== EN-TÊTE ===== */
+.header {
+    background-color: #5a2dff;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+/* ===== MENU ===== */
+.menu {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #5a2dff;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* ===== CONTENU ===== */
+.contenu {
+    padding: 20px;
+}
+
+/* ===== CARTES ===== */
+.carte {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.carte h2 {
+    color: #5a2dff;
+}
+
+.carte button {
+    background-color: #5a2dff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ===== RESPONSIVE (Desktop) ===== */
+@media screen and (min-width: 768px) {
+    .contenu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
